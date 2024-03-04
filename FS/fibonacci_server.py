@@ -4,7 +4,7 @@ import json
 
 app = Flask(__name__)
 
-# Function to calculate Fibonacci number
+
 def fib(n):
     a, b = 0, 1
     for _ in range(n):
@@ -23,7 +23,6 @@ def register():
     udp_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     udp_socket.sendto(message.encode(), (as_ip, int(as_port)))
 
-    # Assuming the registration is always successful
     return jsonify({"message": "Registration successful"}), 201
 
 @app.route('/fibonacci')
