@@ -1,7 +1,7 @@
 import socket
 import json
 
-# Server details
+
 as_ip = '0.0.0.0'
 as_port = 53533
 dns_records_file = 'dns_records.json'
